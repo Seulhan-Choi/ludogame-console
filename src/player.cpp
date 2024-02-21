@@ -9,6 +9,9 @@ using namespace std;
 void player::setName(string playerName) {
 	Name = playerName;
 }
-string player::testPrintName() {
+string player::getName() {
 	return Name;
+}
+int player::getreservePieces() {
+	return reservePieces;
 }

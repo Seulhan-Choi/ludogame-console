@@ -6,9 +6,13 @@
 
 using namespace std;
 
-int dice::diceRoll()	{
+void dice::diceRoll()	{
 	random_device rd;
 	mt19937 gen(rd());
 	uniform_int_distribution<> distr(1, 6);
-	return distr(gen);
+	currentRoll = distr(gen);
+}
+
+int dice::getRoll() {
+	return currentRoll;
 }

@@ -7,8 +7,9 @@
 
 class dice {
 private:
-	
+	int currentRoll;
 public:
-	int diceRoll();
+	void diceRoll(); // Returns random value between 1 and 6
+	int getRoll();
 };
 

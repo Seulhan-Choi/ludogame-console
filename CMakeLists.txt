@@ -14,7 +14,7 @@ project(parchis-console VERSION 1.0 LANGUAGES CXX)
 add_executable(parchis-console
     src/main.cpp
     src/dice.cpp
-    src/table.cpp
+    src/game.cpp
     src/piece.cpp
     src/player.cpp
 )
