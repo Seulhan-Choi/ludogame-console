@@ -1,4 +1,4 @@
-﻿# CMakeList.txt: CMake project for parchis-console, include source and define
+﻿# CMakeList.txt: CMake project for ludogame-console, include source and define
 # project specific logic here.
 
 cmake_minimum_required(VERSION 3.8)
@@ -8,10 +8,10 @@ if (POLICY CMP0141)
   cmake_policy(SET CMP0141 NEW)
 endif()
 
-project(parchis-console VERSION 1.0 LANGUAGES CXX)
+project(ludogame-console VERSION 1.0 LANGUAGES CXX)
 
 # Add source to this project's executable.
-add_executable(parchis-console
+add_executable(ludogame-console
     src/main.cpp
     src/dice.cpp
     src/game.cpp
@@ -19,9 +19,9 @@ add_executable(parchis-console
     src/player.cpp
 )
 
-target_include_directories(parchis-console PRIVATE include/)
+target_include_directories(ludogame-console PRIVATE include/)
 
-set_target_properties(parchis-console PROPERTIES
+set_target_properties(ludogame-console PROPERTIES
     CXX_STANDARD 11
     CXX_STANDARD_REQUIRED YES
     CXX_EXTENSIONS NO

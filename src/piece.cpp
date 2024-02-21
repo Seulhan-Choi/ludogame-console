@@ -69,11 +69,11 @@ bool piece::checkSafeZone() {
 	return false;
 }
 
-bool piece::checkCapture(int n, int a) {
+/*bool piece::checkCapture(int n, int a) {
 	for (int i = 0; i < n; i++) {
 		if (i != a && players[a].getglobalPosition() == players[i].getglobalPosition()) {
 			return true;
 		}
 	}
 	return false;
-}
+}*/
